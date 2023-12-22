@@ -85,7 +85,7 @@ $(document).ready(function() {
 });
 //Welcome Prompt Message
 $(document).ready(function() {
-    var welcomemsg = "Please Let Us Know You By Your Name"
+    var welcomemsg = "Please Let Us Know Your Name"
     var msg = prompt(welcomemsg);
     $("#visiName").text(" "+msg);
     if(msg != ""){
