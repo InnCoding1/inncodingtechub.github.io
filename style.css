@@ -774,7 +774,7 @@ background-color: rgb(26, 26, 27);
     border: none;
 }
 .service-box:hover{
-    opacity: .9;
+    opacity: 1;
     transform: translateY(-.4rem);
 }
 .service-icon{
@@ -1588,6 +1588,12 @@ footer a i{
 }
 .about-content h2{
     text-align: center;
+}
+.section-services .service-box{
+    opacity: 1;
+}
+.service-box:hover{
+    opacity: 1;
 }
 .service-icon{
     width: fit-content;
