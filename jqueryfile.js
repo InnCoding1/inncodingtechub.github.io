@@ -56,20 +56,19 @@ $(document).ready(function() {
     });
 });
     //Small Screen Menu Bar
-    function navmenu(){
-        var opanClose = document.getElementById("menu-icon");
-        var nav = document.getElementById("navlist");
-        if(nav.style.right == '-100%'){
-            nav.style.right = '0';
-            opanClose.classList.add("bx-x");
-            opanClose.classList.remove("bx-menu");
-            document.getElementById("nav-more-li").style.display = "none";
-        }else{
-            nav.style.right = '-100%';
-            opanClose.classList.add("bx-menu");
-            opanClose.classList.remove("bx-x");
-        };
+    document.getElementById("menu-icon").addEventListener("click", ()=>{
+       if(document.getElementById("navlist").style.right === '-100%'){
+        document.getElementById("navlist").style.right = '0';
+        document.getElementById("menu-icon").classList.add("bx-x")
+        document.getElementById("menu-icon").classList.remove("bx-menu");
+        document.getElementById("nav-more-li").style.display = "none";
+    }else{
+        document.getElementById("navlist").style.right = '-100%';
+        document.getElementById("menu-icon").classList.add("bx-menu");
+        document.getElementById("menu-icon").classList.remove("bx-x");
     };
+    });
+
     //More Nav in the big screen
 $(document).ready(function() {
     $("#nav-more-li").click(function() {
@@ -159,4 +158,36 @@ $(document).ready(function() {
     $("#testimonier4").text("Jonh Faith");
     $("#hihligt4").text("I got massive value at inncoding")
     $("#comment4").text("The instructors are top-notch, and the practical learning approach in their platform is outstanding.")
+})
+
+//THEME CHANGER SCRIPT
+$(document).ready(()=>{
+    
+    const icon = 
+    $("#mode").click(()=>{
+        $("body").toggleClass('body-theme')
+        $("header").toggleClass('header-theme')
+        $("#about").toggleClass('about-theme')
+        $("#what-we-do").toggleClass('word-theme')
+        $(".btn-box").toggleClass('btn-theme')
+        $("#social").toggleClass('social-theme')
+        $(".form-container").toggleClass('subscriber-theme')
+        $("#skills").toggleClass('skills-theme')
+        $(".skill-bar").toggleClass('skill-bar-theme')
+        $(".navlist").toggleClass('navlist-theme')
+        $("span").toggleClass('span-theme')
+        $(".section-services").toggleClass('service-box-theme')
+        $(".services").toggleClass('service-theme')
+        $(".info").toggleClass('info-theme')
+        $(".bar").toggleClass('bar-theme')
+        $(".subnav").toggleClass('bg-theme')
+        $(".we-are").toggleClass('txt-theme')
+        $("marquee").toggleClass('well-msg')
+        $("#portfolio").toggleClass('portfolio-theme')
+        $("#ourteam").toggleClass('ourteam-theme')
+        $("#testimonies").toggleClass('testimonies-theme')
+        $(".contact").toggleClass('contact-theme')
+        $("#mode").toggleClass('mode')
+    })
+
 })

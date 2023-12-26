@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>inncoding Tech Hub</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="theme.css">
     <!----ICONS WAS GOTTEN FROM HERE BOXICONS INSTEAD OF FONTAWASOME----->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>    <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');</style>
@@ -24,14 +25,15 @@
             <li><a href="#portfolio">Portfolio</a></li>
             <li id="nav-more-li">More</li>
             <li id="nav-more-collapse">Collapse</li>
-        <span id="subnav">
+        <span id="subnav" class="subnav">
             <li><a href="#ourteam">Team</a></li>
             <li><a href="#testimonies">Testimonies</a></li>
             <li><a href="#contact">Contact</a></li>
         </span>
         </ul>
-            <i id="menu-icon" onclick="navmenu()" class="bx bx-menu"></i>
+            <div id="menu-icon" class="bx bx-menu"></div>
     </header>
+    <div id="theme-change"><i class="bx bx-moon" id="mode"></i><span>Theme</span></div>
 
     <!----------------------------Home Section------------------------------>
     <video loop muted autoplay >
@@ -40,9 +42,9 @@
     
     <section id="home" class="home">
         <div class="home-content">
-            <marquee behavior="" direction="left"><h2>Hello!<span id="visiName"></span><span id="comm">,</span> <span id="grt"></span> Welcome to InnCoding Tech Hub.</h2></marquee>
+            <marquee behavior="" direction="left" class=""><h2>Hello!<span id="visiName"></span><span id="comm">,</span> <span id="grt"></span> Welcome to InnCoding Tech Hub.</h2></marquee>
             <div class="change-text">
-                <h3 style="align-self: center;">We are</h3>
+                <h3 style="align-self: center;" class="we-are">We are</h3>
                 <h3 id="what-we-do">
                     <span class="word">Youtuber</span>
                     <span class="word">Web &nbsp;Designer</span>
@@ -198,16 +200,16 @@
     <section id="about" class="about">
         <div class="img-about">
             <img src="image/homeimg2.png" alt="">
-            <div class="info-about1">
+            <div class="info-about1 info-a">
                 <span>10+</span>
                 <p>years Experience</p>
             </div>
-            <div class="info-about2">
+            <div class="info-about2 info-a">
                 <span>150+</span>
                 <p>Projects Completed</p>
             </div>
             
-            <div class="info-about3">
+            <div class="info-about3 info-a">
                 <span>200+</span>
                 <p>Happy Ciont</p>
             </div>
@@ -380,7 +382,7 @@
                                 <P>72%</P>
                             </div>
                             <div class="bar">
-                                <span class="html"></span>
+                                <span class="html" ></span>
                             </div>
                         </div>
         
@@ -620,7 +622,7 @@
                     <img class="gentility" src="image/gentility.png" alt="">
                     <div class="team-details" id="gent-details">
                         <h2><span>Eze,</span> Romanus C.</h2>
-                        <p>A Programmer, Data Analyst and Video Editor</p>
+                        <p>A Programmer, Data Analyst & Video Editor</p>
                         <h4 id="team-role">TeamCSG Tech Hub</h4>
                     </div>
                 </div>
@@ -629,7 +631,7 @@
                     <img src="image/delight.png" alt="">
                     <div class="team-details">
                         <h2><span>Osuagwu,</span> Deligt</h2>
-                        <p>Computer Hardware Engineer, UI/UX Designer</p>
+                        <p>Computer Hardware Engr, UI/UX Designer</p>
                         <h4 id="team-role">CyberDragonTech</h4>
                     </div>
                 </div>
@@ -657,7 +659,7 @@
     <!--////////////////Testimonies Section////////////////////-->
     <section id="testimonies" class="ourteam">
         <div class="main-text" id="testimonies-header">
-            <span>Testimonies</span>
+            <span>Clients Review</span>
             <h2>Hear What Our Clients are Saying About InnCoding!</h2>
         </div>
        <div class="all-testimonies-box">
@@ -746,7 +748,7 @@
             <span>Ask me question</span>
             <h2>Contact Us!</h2>
         </div>
-        <form name="submit-to-google-sheet">
+        <form name="submit-to-google-sheet" class="c-theme">
             <input type="text" name="Fullname" placeholder="Your Name">
             <input type="email" name="Email" placeholder="Your Email">
             <input id="contact-us-num-input" type="number" name="Phone No" placeholder="Your Phone">
