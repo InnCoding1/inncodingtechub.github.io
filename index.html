@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="theme.css">
     <!----ICONS WAS GOTTEN FROM HERE BOXICONS INSTEAD OF FONTAWASOME----->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>    <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');</style>
-    <script src="https://kit.fontawesome.com/ad87537f79.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');</style>
 </head>
 <body>
     
@@ -93,6 +93,7 @@
                 <div class="news-letter-main-text">
                     <h2>Please Subscribe!</h2>
                     <p>To receive update on our current offers.</p>
+                    <p id="error-msg" style="color: red; font-size: 13px; font-weight: 500; display: none;"></p>
                 </div>
 
                 <form id="news-form" name="submit-to-google-sheet">
@@ -102,7 +103,7 @@
                     </div>
                     <div class="in">
                         <i class='bx bx-envelope'></i>
-                        <input class="input" type="email" name="Email Address" placeholder="Your Valid Email">
+                        <input class="input" id="email" type="email" name="Email Address" placeholder="Your Valid Email">
                     </div>
                     <div class="in">
                         <i class='bx bx-phone '></i>
@@ -766,10 +767,21 @@
         <p>Copyright &copy; 2023 by Inn-Group || All Right Reserved.</p>
         <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
     </footer>
+    <!-- Brevo Conversations {literal} -->
+<script>
+    (function(d, w, c) {
+        w.BrevoConversationsID = '6592025d4651ea2a734f5de7';
+        w[c] = w[c] || function() {
+            (w[c].q = w[c].q || []).push(arguments);
+        };
+        var s = d.createElement('script');
+        s.async = true;
+        s.src = 'https://conversations-widget.brevo.com/brevo-conversations.js';
+        if (d.head) d.head.appendChild(s);
+    })(document, window, 'BrevoConversations');
+</script>
+<!-- /Brevo Conversations {/literal} -->
 
-    <script src="formscript.js"></script>
-    <script src="contactform.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
     const swiper = new Swiper('.swiper', {
         // Optional parameters
@@ -798,9 +810,14 @@
         },*/
       });
     </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/ad87537f79.js" crossorigin="anonymous"></script>
     <script src="mixitup.min.js"></script>
-    <script src="script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="formscript.js"></script>
+    <script src="contactform.js"></script>
     <script src="jqueryfile.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

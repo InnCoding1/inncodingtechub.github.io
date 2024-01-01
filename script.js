@@ -4,10 +4,12 @@
     newsletterform.style.display = 'block';
 }*/
 //setTimeout(openSubscribeForm, 20000); //Call the function to display form for subscribe for news letter
-let newsletterform = document.getElementById('form-container');
-setTimeout(() => {
-    newsletterform.style.display = 'block';
-}, 10000);
+$(document).ready(()=>{  
+    setTimeout(() => {
+        $('#form-container').css('display', 'block');
+    }, 10000);
+});
+
 ////////////NEWS LETTER FORM CLOSE SCRIPT
 function closeSubscribeForm(){
     var closenews = document.getElementById('form-container');
@@ -134,5 +136,18 @@ circles.forEach(elem=>{
             close.style.display = 'block';
         }
     };
+
+    //<!-- Brevo Conversations {literal} -->
+        (function(d, w, c) {
+            w.BrevoConversationsID = '6592025d4651ea2a734f5de7';
+            w[c] = w[c] || function() {
+                (w[c].q = w[c].q || []).push(arguments);
+            };
+            var s = d.createElement('script');
+            s.async = true;
+            s.src = 'https://conversations-widget.brevo.com/brevo-conversations.js';
+            if (d.head) d.head.appendChild(s);
+        })(document, window, 'BrevoConversations');
+    //<!-- /Brevo Conversations {/literal} -->
 
     
