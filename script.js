@@ -1,9 +1,5 @@
+
     // //////////NEWS LETTER FORM DISPLAY SCRIPT
-/*function openSubscribeForm(){
-    let newsletterform = document.getElementById('form-container');
-    newsletterform.style.display = 'block';
-}*/
-//setTimeout(openSubscribeForm, 20000); //Call the function to display form for subscribe for news letter
 
 $(document).ready(()=>{  
     setTimeout(() => {
@@ -137,6 +133,7 @@ circles.forEach(elem=>{
             close.style.display = 'block';
         }
     };
+   
 
 
 
