@@ -1,5 +1,5 @@
     //<!-- Brevo Conversations {literal} -->
-    (function(d, w, c) {
+    /*(function(d, w, c) {
         w.BrevoConversationsID = '6592025d4651ea2a734f5de7';
         w[c] = w[c] || function() {
             (w[c].q = w[c].q || []).push(arguments);
@@ -8,5 +8,5 @@
         s.async = true;
         s.src = 'https://conversations-widget.brevo.com/brevo-conversations.js';
         if (d.head) d.head.appendChild(s);
-    })(document, window, 'BrevoConversations');
+    })(document, window, 'BrevoConversations');*/
 //<!-- /Brevo Conversations {/literal} -->
