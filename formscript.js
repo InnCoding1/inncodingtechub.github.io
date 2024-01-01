@@ -38,8 +38,8 @@ fetch(scriptURL, { method: 'POST', body: new FormData(form)})
     const subscribername = document.getElementById('fullname');
     const subs = document.getElementById('subscriber');
     if(subs == ''){
-        subs.innerHTML = subscribername.value;
+        subs.innerHTML ='Dear'+' '+ subscribername.value;
     }else{
-        subs.innerHTML = subscribername.value;
+        subs.innerHTML ='Dear'+' '+ subscribername.value;
     }
  }
