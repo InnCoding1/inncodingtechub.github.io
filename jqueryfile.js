@@ -1,11 +1,11 @@
 //Links Embeded in the Page
-$(document).ready(function() {
+$(document).ready(function(){
     $("#hire-us").attr({"href": "http://formsubmit.co/el/wutomi"}); //Hire us link
     $("#chat-us").attr("href", "#"); //Chat us link
 
     //Social Media Handles
     $("#wa").attr("href", "https://wa.link/q8tvt4"); //Whatsapp us link
-    $("#face").attr("href", "#"); //Facebook us link
+    $("#face").attr("href", "https://www.facebook.com/innctechub"); //Facebook us link
     $("#inst").attr("href", "#"); //Instagram us link
     $("#twit").attr("href", "#"); //Twitter us link
     $("#link").attr("href", "#"); //Linkedin us link
@@ -190,4 +190,32 @@ $(document).ready(()=>{
         $("#mode").toggleClass('mode')
     })
 
+})
+
+// Footer subscribe button
+$(document).ready(()=>{
+    var subscr = $("#sub")
+    $("#sub").on({
+        "click": ()=>{
+            subscr.css({
+                'background': 'orange',
+                'color': '#250822',
+                'border': '3px solid orange'
+        })
+            $('#form-container').toggle()
+        },
+        "mouseenter": ()=>{
+            subscr.css({
+                'background': 'blue',
+                'color': '#fff'
+        })
+        },
+        "mouseleave": ()=>{
+            subscr.css({
+                'background': '#250822',
+                'color': 'white',
+                'border': '3px solid #12f7ff'
+        })
+        }
+    })
 })

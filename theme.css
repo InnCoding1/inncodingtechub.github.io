@@ -287,6 +287,9 @@
         color: #f5f5f5;
         transition: .4s ease-in-out;
     }
+    .ourteam-theme #teamslider-box{
+        opacity: .8;
+    }
     .testimonies-theme h2{
         color: red;
         transition: .4s ease-in-out;
@@ -323,6 +326,5 @@
         transition: .4s ease-in-out;
     }
     .contact-theme .c-theme input{
-        background: #000;
         transition: .4s ease-in-out;
     }
