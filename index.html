@@ -16,7 +16,7 @@
     <!-----------------------header sites------------------------>
     <div class="time"><span id="h"></span><span id="m"></span><span id="s"></span><span id="pmAm"></span></div>
     <header>
-        <div class="logo"><span>Inn</span>Coding.<!--<a href="#"><img src="image/logof.png"></a>--></div>
+        <div class="logo"><span>Inn</span>Coding.</div>
         <ul class="navlist" id="navlist">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -27,7 +27,7 @@
             <li id="nav-more-collapse">Collapse</li>
         <span id="subnav" class="subnav">
             <li><a href="#ourteam">Team</a></li>
-            <li><a href="#testimonies">Testimonies</a></li>
+            <li><a href="#testimonies">Clients Review</a></li>
             <li><a href="#contact">Contact</a></li>
         </span>
         </ul>
@@ -510,7 +510,7 @@
     <!--------------------Portfolio Section Start------------------->
     <section id="portfolio" class="portfolio">
         <div class="main-text">
-            <span>What i will do for you</span>
+            <span>What we do</span>
             <h2>Latest Projects</h2>
         </div>
         <div class="container">
@@ -746,16 +746,16 @@
     <!--------------------Contact Section Start------------------->
     <section id="contact" class="contact">
         <div class="main-text">
-            <span>Ask me question</span>
+            <span>Ask us question</span>
             <h2>Contact Us!</h2>
         </div>
-        <form name="submit-to-google-sheet" class="c-theme">
-            <input type="text" name="Fullname" placeholder="Your Name">
-            <input type="email" name="Email" placeholder="Your Email">
-            <input id="contact-us-num-input" type="number" name="Phone No" placeholder="Your Phone">
-            <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <form class="c-theme">
+            <input type="text" name="FullName" placeholder="Your Name">
+            <input type="email" name="Email" placeholder="Your Email &#9993;">
+            <input id="contact-us-num-input" type="number" name="Phone" placeholder="Your Phone &#9742;">
+            <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message &#9993;"></textarea>
             <div class="btn-box formbtn">
-                <button type="submit" class="btn">Send Message</button>
+                <button type="submit"  id="form-msg" class="btn">Send Message</button>
             </div>
         </form>
         <span id="msg"></span>
@@ -765,6 +765,8 @@
     <!--------------------Footer Website Start------------------->
     <footer>
         <p>Copyright &copy; 2023 by Inn-Group || All Right Reserved.</p>
+        <a href="#" style="background: none;"><img src="image/logoinncoding.png" style="max-width: 5rem;"></a>
+        <subscribe id="sub" style="border-radius: 50px; border: 3px solid #12f7ff; padding: 5px; font-weight: 500;background-color: #250822;">Subscribe</subscribe>
         <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
     </footer>
 
@@ -774,6 +776,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="formscript.js"></script>
     <script src="contactform.js"></script>
+    <script src="contactus.js"></script>
     <script src="jqueryfile.js"></script>
     <script src="script.js"></script>
     <script src="slider.js"></script>
