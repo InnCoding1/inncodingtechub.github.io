@@ -116,9 +116,8 @@ header.sticky{
     
 }
 .time span{
-    padding: 10px 5px;
     font-size: larger;
-    font-weight: 700;
+    font-weight: 600;
 }
 span{
     color: var(--hover-color);

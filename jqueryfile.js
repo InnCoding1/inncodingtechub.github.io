@@ -93,13 +93,20 @@ $(document).ready(function() {
     $("#grt").text(txtim+" ");
     $("#pmAm").text(pmam);
 });
+
 //Time 
 $(document).ready(function() {
     setInterval(function() {
         var date = new Date();
-        $("#h").text(date.getHours()+" H")
-        $("#m").text(date.getMinutes() +" M")
-        $("#s").text(date.getSeconds()+" S")
+        var h = date.getHours();
+        var m = date.getMinutes();
+        var s = date.getSeconds();
+        $("#h").text(h+" "+":")
+        $("#m").text(m+" "+":")
+        $("#s").text(s+" ")
+        if(h >= 10){$("#h-zero").text('')}else{$("#h-zero").text('0')};
+        if(m >= 10){$("#m-zero").text("")}else{$("#m-zero").text('0')};
+        if(s >= 10){$("#s-zero").text("")}else{$("#s-zero").text("0")};
     },1000);
 });
 
