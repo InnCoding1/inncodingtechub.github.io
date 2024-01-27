@@ -965,6 +965,10 @@ text-decoration-line: underline;}
     width: 50%;
     animation: javascript 4s;
 }
+.skill-bar .bar .Reactjs{
+    width: 45;
+    animation: react 6s;
+}
 .skill-bar .bar .css{
     width: 70%;
     animation: css 5s;
@@ -994,6 +998,14 @@ text-decoration-line: underline;}
         width: 50%;
     }
 }
+@keyframes react{
+    0%{
+        width: 0%
+    }
+    100%{
+        width: 50%;
+    }
+}
 @keyframes css{
     0%{
         width: 0%
@@ -1002,6 +1014,7 @@ text-decoration-line: underline;}
         width: 70%;
     }
 }
+
 
 /*------------skill right-----------*/
 .skill-right .skill-bar .bar .web-design{

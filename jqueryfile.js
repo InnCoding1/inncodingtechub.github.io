@@ -96,16 +96,8 @@ $(document).ready(function() {
 //Time 
 $(document).ready(function() {
     setInterval(function() {
-        var date = new Date();
-        var h = date.getHours();
-        var m = date.getMinutes();
-        var s = date.getSeconds();
-        $("#h").text(h+" "+":")
-        $("#m").text(m+" "+":")
-        $("#s").text(s+" ")
-        if(h >= 10){$("#h-zero").text('')}else{$("#h-zero").text('0')};
-        if(m >= 10){$("#m-zero").text("")}else{$("#m-zero").text('0')};
-        if(s >= 10){$("#s-zero").text("")}else{$("#s-zero").text("0")};
+        var date = new Date().toLocaleTimeString();
+        $("#tm").text(date)
     },1000);
 });
 
