@@ -2,9 +2,8 @@
 $(document).ready(function(){
     $("#hire-us").attr({"href": "http://formsubmit.co/el/wutomi"}); //Hire us link
     $("#chat-us").attr("href", "#"); //Chat us link
-
     //Social Media Handles
-    $("#wa").attr("href", "https://wa.link/q8tvt4"); //Whatsapp us link
+    $("#wa").attr("href", "https://wa.link/rgiqf8"); //Whatsapp us link
     $("#face").attr("href", "https://www.facebook.com/innctechub"); //Facebook us link
     $("#inst").attr("href", "#"); //Instagram us link
     $("#twit").attr("href", "#"); //Twitter us link
