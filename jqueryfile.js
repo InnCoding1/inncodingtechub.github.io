@@ -35,7 +35,7 @@ $(document).ready(function() {
     $("div #page2").hide(1000);
     $("div #page3").hide(1000);
     $(".rdb").css({
-        "width": '30px',
+        "width": "30px",
     });
 
     $("#pagee1").click(function() {
@@ -83,15 +83,15 @@ $(document).ready(function() {
 });
 //Welcome Prompt Message
 $(document).ready(function() {
-    var welcomemsg = "Please Let Us Know Your Name"
-    var msg = prompt(welcomemsg);
-    $("#visiName").text(" "+msg);
-    if(msg != ""){
+    //var welcomemsg = "Please Let Us Know Your Name"
+    //var msg = prompt(welcomemsg);
+    //$("#visiName").text(" "+msg);
+    /*if(msg != ""){
         $("#comm").show();
-    };
-    $("#grt").text(txtim+" ");
+    };*/
+    
     $("#pmAm").text(pmam);
-});
+})
 
 //Time 
 $(document).ready(function() {
@@ -107,15 +107,13 @@ $(document).ready(function() {
     var gritTime = new Date();
     var hour = gritTime.getHours();
     if(hour <= 11 && hour < 12){
-         txtim += "Good Morning!";
-         pmam += "AM";
+         txtim += "Good Morning";
     }else if(hour >= 12 && hour < 16){
-        txtim += "Good Afternoon!";
-        pmam += "PM"
+        txtim += "Good Afternoon";
     }else if(hour >= 16 && hour < 24){
-        txtim += "Good Evening!";
-        pmam += "PM"
+        txtim += "Good Evening";
     };
+    $("#grt").text(txtim+" ");
 };
 
 function social_handles(){
@@ -185,7 +183,7 @@ $(document).ready(()=>{
         $("#ourteam").toggleClass('ourteam-theme')
         $("#testimonies").toggleClass('testimonies-theme')
         $(".contact").toggleClass('contact-theme')
-        $("#mode").toggleClass('mode')
+        $("#mode").toggleClass('mode')   
     })
 
 })

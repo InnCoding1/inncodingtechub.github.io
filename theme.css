@@ -20,8 +20,8 @@
     }
     .mode{
         transition: .3s ease-in-out;
-        box-shadow: 0 0 1.5rem red;
-        background-color: red;
+        box-shadow: 0 0 1.5rem black;
+        background-color: aqua;
     }
     #theme-change span{
         font-weight: 500;
@@ -36,6 +36,7 @@
         transition: .2s ease-in-out;
     }
     .body-theme{
+        background: #fff;
         color: #000;
         transition: .2s ease-in-out;
     }
@@ -44,14 +45,18 @@
         transition: .2s ease-in-out;
     }
     .well-msg span{
-        color: rgb(185, 6, 6);
+        color: darkturquoise;
         transition: .2s ease-in-out;
     }
     .header-theme{
-        background-color: black;
+        background-color: darkturquoise;
         opacity: .9;
         color: #f5f5f5;
         transition: .4s ease-in-out;
+    }
+    .header-theme .logo span{
+        background: none;
+        color: #000;
     }
     .header-theme ul li a{
         color: #f5f5f5;
@@ -62,11 +67,11 @@
         transition: .2s ease-in-out;
     }
     .word-theme span{
-        color: rgb(179, 8, 8);
+        color: darkturquoise;
         transition: .2s ease-in-out;
     }
     .about-theme{
-        background-color: #f5f5f5;
+        background-color: #fff;
         transition: .2s ease-in-out;
     }
     .about-theme p{
@@ -80,54 +85,54 @@
         transition: .2s ease-in-out;
     }
     .about-theme h2{
-        color: red;
+        color: darkturquoise;
         transition: .2s ease-in-out;
     }
     .about-theme .info-a{
-        background: #ece6e6;
-        box-shadow: 0 0 .5rem rgb(55, 55, 158);
-        border: 2px solid darkblue;
+        background: #fff;
+        box-shadow: 0 0 .5rem aqua;
+        border: 2px solid aqua;
         transition: .2s ease-in-out;
     }
     .btn-theme .btn{
-        background-color: darkblue;
-        color: #f5f5f5;
-        box-shadow: 0 0 .5rem rgb(70, 70, 216);
+        background-color: darkturquoise;
+        color: #fff;
+        box-shadow: 0 0 .5rem aqua;
         transition: .2s ease-in-out;
     }
     .btn-theme .btn:hover{
-        color: darkblue;
+        color: black;
     }
     .btn-theme .btn::before{
         background: white;
-        border: 2px solid darkblue;
+        border: 2px solid #12f7ff;
     }
     .btn-theme .btn:hover::before{
         width: 100%;
     }
     .btn-theme .btn:nth-child(2){
         background: #f5f5f5;
-        color: darkblue;
+        color: #000;
     }
     .btn-theme .btn:nth-child(2):hover{
-        color: #f5f5f5;
+        color: #fff;
     }
     .btn-theme .btn:nth-child(2)::before{
-        background: darkblue;
+        background: darkturquoise;
     }
     .social-theme a{
         background-color: #f5f5f5;
-        box-shadow: 0 0 .5rem darkblue;
-        border: 2px solid rgb(38, 38, 136);
-        color: darkblue;
+        box-shadow: 0 0 .5rem #12f7ff;
+        border: 2px solid #12f7ff;
+        color: black;
         transition: .2s ease-in-out;
     }
     .subscriber-theme{
-        background-color: #f5f5f5;
+        background-color: black;
         transition: .2s ease-in-out;
     }
     .subscriber-theme .news-letter-main-text h2{
-        color: red;
+        color: #12f7ff;
         transition: .2s ease-in-out;
     }
     .subscriber-theme .news-letter-main-text p{
@@ -136,22 +141,23 @@
         transition: .4s ease-in-out;
     }
     .subscriber-theme .in{
-        box-shadow: 0 0 .4rem darkblue;
+        box-shadow: 0 0 .5px black;
     }
     .subscriber-theme .news-form-btn .btn-form{
-        background-color: darkblue;
+        background-color: #12f7ff;
         border-radius: 10%;
     }
     .subscriber-theme .news-form-btn .btn-form input{
-        color: #f5f5f5;
+        color: #fff;
+        transition: .5s;
     }
     .subscriber-theme .news-form-btn .btn-form:hover{
-        background: #ece6e6;
-        color: darkblue;
+        background: #fff;
+        color: black;
     }
     .subscriber-theme .news-form-btn .btn-form:hover input{
-        background: #ece6e6;
-        color: darkblue;
+        background: #fff;
+        color: black;
     }
     .skills-theme{
         background-color: #f5f5f5;
@@ -163,21 +169,21 @@
         transition: .2s ease-in-out;
     }
     .skills-theme .main-text h2{
-        color: red;
+        color: #12f7ff;
         transition: .2s ease-in-out;
     }
     .skill-bar-theme .bar span{
-        background-color: rgb(28, 28, 104);
-        box-shadow: 0 0 .5rem darkblue;
+        background-color: #12f7ff;
+        box-shadow: 0 0 .5rem black;
         transition: .2s ease-in-out;
     }
     .skill-bar-theme .bar{
-        background-color: red;
+        background-color: #12f7ff;
         transition: .2s ease-in-out;
     }
     .skills-theme .skill-main .skill-left .skillbox,
     .skills-theme .skill-main .skill-right .skillbox{
-        border: 3px solid darkblue;
+        border: 3px solid black;
         transition: .2s ease-in-out;
     }
     .skills-theme .skill-main .skill-left .skillbox .bar,
@@ -191,7 +197,7 @@
         transition: .2s ease-in-out;
     }
     .bar-theme span{
-        background-color: red;
+        background-color: darkturquoise;
         transition: .2s ease-in-out;
     }
     .navlist-theme a{
@@ -200,7 +206,7 @@
     }
     .navlist-theme a:hover{
         font-weight: 500;
-        color: rgb(156, 13, 13);
+        color: #000;
         text-shadow: 0 0 10px rgb(76, 76, 216),
         0 0 20px rgb(76, 76, 216),
         0 0 30px rgb(76, 76, 216),
@@ -209,19 +215,21 @@
         0 0 80px rgb(76, 76, 216),
         0 0 100px rgb(76, 76, 216),
         0 0 150px rgb(76, 76, 216);
-        transition: 1s ease-in-out;
+        transition: .5s ease-in-out;
     }
     .span-theme{
-        color: darkblue;
+        color: darkturquoise;
         transition: .4s ease-in-out;
     }
+
     .service-box-theme .service-box{
         background: #f5f5f5;
         transition: .2s ease-in-out;
     }
     .service-box-theme .service-box .service-icon{
-        color: darkblue;
-        border: 2px solid rgb(76, 76, 216);
+        color: darkturquoise;
+        border: 2px solid darkturquoise;
+        box-shadow: 0 0 .5rem darkturquoise;
         background-color: floralwhite;
         transition: .2s ease-in-out;
     }
@@ -231,19 +239,28 @@
         transition: .2s ease-in-out;
     }
     .service-theme .main-text h2{
-        color: red;
+        color: darkturquoise;
+    }
+    .portfolio-theme{
+        background-color: #fff;
+    }
+    .portfolio-theme .main-text span{
+        color: black;
     }
     .portfolio-theme .main-text h2{
-        color: red;
+        color: #12f7ff;
         transition: .2s ease-in-out;
     }
+    .portfolio-theme .container .fillter-buttons .btn{
+        color: black;
+    }
     .portfolio-theme .container .portfolio-gallery .port-box{
-        box-shadow: 0 0 .5rem darkblue;
-        border: 2px solid darkblue;
+        box-shadow: 0 0 .5rem black;
+        border: 2px solid #12f7ff;
         transition: .2s ease-in-out;
     }
     .portfolio-theme .container .portfolio-gallery .port-box .port-content{
-        background: linear-gradient(rgba(0, 0, 0, .2), darkblue);
+        background: linear-gradient(rgba(0, 0, 0, .2), black);
         transition: .2s ease-in-out;
     }
     .portfolio-theme .container .portfolio-gallery .port-box .port-content h3, p{
@@ -260,7 +277,7 @@
         transition: .2s ease-in-out;
     }
     .ourteam-theme h2{
-        color: red;
+        color: darkturquoise;
         transition: .4s ease-in-out;
     }
     .ourteam-theme .main-text span{
@@ -269,13 +286,13 @@
         transition: .2s ease-in-out;
     }
     .ourteam-theme #person-box::after{
-        background: linear-gradient(rgba(0, 0, 0, 0.3), darkblue);
+        background: linear-gradient(rgba(0, 0, 0, 0.3), black);
         transition: .2s ease-in-out;
     }
     .ourteam-theme #person-box .team-details{
         background-color: #f5f5f5;
-        box-shadow: 0 0 .5rem darkblue;
-        border: 2px solid darkblue;
+        box-shadow: 0 0 .5rem darkturquoise;
+        border: 2px solid darkturquoise;
         transition: .2s ease-in-out;
     }
     .ourteam-theme #person-box .team-details p{
@@ -291,16 +308,23 @@
         opacity: .8;
     }
     .testimonies-theme h2{
-        color: red;
+        color: darkturquoise;
         transition: .2s ease-in-out;
     }
+    .testimonies-theme{
+        background: #fff;
+    }
+    .testimonies-theme .main-text span{
+        color: black;
+    }
     .testimonies-theme .peoples-view{
-        background-color: aliceblue;
+        background-color: rgba(245, 248, 250, 0.35);
         transition: .2s ease-in-out;
     }
     .testimonies-theme .peoples-view h3{
-        color: darkblue;
+        color: darkturquoise;
         transition: .2s ease-in-out;
+        letter-spacing: 1px;
     }
     .testimonies-theme .peoples-view p{
         color: black;
@@ -308,16 +332,16 @@
     }
     .testimonies-theme .peoples-view .human-icon .bxs-user{
         background-color: #f5f5f5;
-        box-shadow: 0 0 .5rem darkblue;
-        border: 2px solid darkblue;
+        box-shadow: 0 0 .5rem darkturquoise;
+        border: 2px solid darkturquoise;
         transition: .2s ease-in-out;
     }
-    /*.contact-theme{
-        background-color: #f5f5f5;
+    .contact-theme{
+        background-color: #f5f5f2;
         transition: 1s ease-in-out;
-    }*/
+    }
     .contact-theme h2{
-        color: red;
+        color: darkturquoise;
         transition: .4s ease-in-out;
     }
     .contact-theme span{
@@ -327,4 +351,10 @@
     }
     .contact-theme .c-theme input{
         transition: .4s ease-in-out;
+        background: linear-gradient(darkturquoise, #12f7ff);
+        opacity: .7;
+        color: #fff;
+    }
+    .contact-theme #t-area{
+        background: linear-gradient(darkturquoise, #12f7ff); 
     }
