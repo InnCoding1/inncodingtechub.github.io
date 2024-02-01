@@ -3,7 +3,7 @@ $("#add-data").after(
   "<input type='text' id='response' name='FullName' placeholder='Your Name'>" +
   "<input type='email' name='Email' placeholder='Your Email &#9993;'>"+
   `<input id="contact-us-num-input" type="number" name="Phone" placeholder="Your Phone &#9742;">`+
-  `<textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message &#9993;"></textarea>`+
+  `<textarea name="Message" id="t-area" cols="30" rows="10" placeholder="Your Message &#9993;"></textarea>`+
   `<input type="hidden" name="_next" value="https://inncodingtech.com/thank-you-page.html">`+
   `<input type="hidden" name="_subject" value="New submission!">`+
   `<input type="hidden" name="_cc" value="inncoding1@gmail.com">`+

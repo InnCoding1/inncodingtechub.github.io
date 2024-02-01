@@ -35,15 +35,13 @@
     background: var(--hover-color);
     border-radius: 5rem;
 }
-/*html{
-    scroll-behavior: smooth;
-}*/
 body{
     font-family: "poppins", sans-serif;
     background-color: var(--bg-color);
-    color: var(--text-color);
+    /*background: linear-gradient(#12f7ff, #42d9df, #61475e);*/
+    color:var(--text-color);
     scroll-behavior: smooth;
-    height: 100vh; 
+    height: 100vh;
 }
 .body{
     background-image: url("image/bgimg1.jpg");
@@ -664,6 +662,15 @@ background-color: rgb(26, 26, 27);
     font-weight: 300;
     margin-bottom: 1.5rem;
 }
+.about-content p span{
+    color: #fdfdfd;
+    font-weight: 300;
+    text-transform: lowercase;
+    font-size: 15px
+}
+.read-more-span{
+    display: none;
+}
 .about-content .btn-box{
     width: 100%;
 }
@@ -965,6 +972,10 @@ text-decoration-line: underline;}
     width: 50%;
     animation: javascript 4s;
 }
+.skill-bar .bar .Reactjs{
+    width: 45;
+    animation: react 6s;
+}
 .skill-bar .bar .css{
     width: 70%;
     animation: css 5s;
@@ -994,6 +1005,14 @@ text-decoration-line: underline;}
         width: 50%;
     }
 }
+@keyframes react{
+    0%{
+        width: 0%
+    }
+    100%{
+        width: 50%;
+    }
+}
 @keyframes css{
     0%{
         width: 0%
@@ -1002,6 +1021,7 @@ text-decoration-line: underline;}
         width: 70%;
     }
 }
+
 
 /*------------skill right-----------*/
 .skill-right .skill-bar .bar .web-design{

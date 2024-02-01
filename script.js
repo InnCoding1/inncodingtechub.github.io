@@ -116,7 +116,6 @@ circles.forEach(elem=>{
             close.style.display = 'block';
         }
     };
-    
     function popupcms(){
         var seo = document.getElementById('cms-read-more');
         if (seo.style.display == 'none') {
