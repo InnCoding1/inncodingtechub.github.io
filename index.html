@@ -786,12 +786,23 @@
 
     <!--------------------Footer Website Start------------------->
     <footer>
-        <p>Copyright &copy; 2023 by Inn-Group || All Right Reserved.</p>
-        <a href="#" style="background: none;"><img src="image/logoinncoding.png" style="max-width: 5rem;" alt="logo"></a>
-        <subscribe id="sub" style="border-radius: 50px; border: 3px solid #12f7ff; padding: 5px; font-weight: 500;background-color: #250822;">Subscribe</subscribe>
-        <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        <div>
+            <p>Copyright &copy; <span id="Year" style="color: #bdb9b9;"></span> Inn-Group || All Right Reserved.</p>
+        </div>
+        <div>
+            <a href="#" style="background: none;"><img src="image/logoinncoding.png" style="max-width: 5rem; max-height: 2rem;" alt="logo"></a>
+        </div> 
+        <div>
+            <subscribe id="sub" style="border-radius: 50px; border: 3px solid #12f7ff; padding: 5px; font-weight: 500;background-color: #250822;">Subscribe</subscribe>
+        </div>
+        <div>
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
     </footer>
-
+    <script>
+    var year = new Date().getFullYear()
+    document.getElementById("Year").innerHTML = year;
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/ad87537f79.js" crossorigin="anonymous"></script>
     <script src="mixitup.min.js"></script>

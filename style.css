@@ -1728,6 +1728,16 @@ footer a i{
 #seo-read-more #readmore-img1{
     display: none;
 }
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+}
+footer div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 }
 @media only screen and (max-width: 400px){
     #home-sub-text{
@@ -1764,5 +1774,6 @@ footer a i{
 }
 #testimonies-header h2{
     font-size: 15px;
+    
 }
 }
